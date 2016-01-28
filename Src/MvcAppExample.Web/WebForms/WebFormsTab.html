@@ -1,0 +1,22 @@
+﻿<p>This tab can freely constructed and doesn't rely on Mvc for its contents! Instead, use Mvc for it's API and render the tab using something like Angular.Js</p>
+
+<script type="text/javascript">
+    $(function () {
+        $("#htmltab #hellobutton").click(function() {
+            $.get(
+                basePath + "/MvcApps/MvcAppExample/ExampleApi/HelloMvc",
+                {
+                    input: $("#htmltab #helloinput").val()
+                }
+            ).done(function(data) {
+                $("#htmltab #helloresult").show().html(data);
+            });
+        });
+    });
+</script>
+
+<div id="htmltab">
+    <input id="helloinput" placeholder="Enter something... " />
+    <input type="button" id="hellobutton" value="Hello Mvc!"/>
+    <pre id="helloresult" style="display: none"></pre>
+</div>

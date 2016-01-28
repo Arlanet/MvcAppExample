@@ -1,0 +1,23 @@
+﻿@using ClientDependency.Core.Mvc
+@using MvcApp
+@inherits System.Web.Mvc.WebViewPage
+@{
+    Layout = null;
+
+    Html.LoadDependencies();
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>uCommerce MVC App</title>
+
+    @Html.RenderJsHere()
+    @Html.RenderCssHere()
+
+    @RenderSection("head", false)
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>

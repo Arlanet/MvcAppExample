@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAppExample.Web", "Src\MvcAppExample.Web\MvcAppExample.Web.csproj", "{7746FAE5-17EF-4DAD-9989-0E15F95FB1BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAppExample", "Src\MvcAppExample\MvcAppExample.csproj", "{914CA36E-48E5-4421-8A39-F7D234B2EA70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "uCommerce", "uCommerce", "{DA91D010-854C-4869-BF6A-908A979A05F4}"
+	ProjectSection(SolutionItems) = preProject
+		App.config = App.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7746FAE5-17EF-4DAD-9989-0E15F95FB1BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7746FAE5-17EF-4DAD-9989-0E15F95FB1BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7746FAE5-17EF-4DAD-9989-0E15F95FB1BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7746FAE5-17EF-4DAD-9989-0E15F95FB1BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914CA36E-48E5-4421-8A39-F7D234B2EA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914CA36E-48E5-4421-8A39-F7D234B2EA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914CA36E-48E5-4421-8A39-F7D234B2EA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914CA36E-48E5-4421-8A39-F7D234B2EA70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

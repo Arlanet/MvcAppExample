@@ -1,0 +1,30 @@
+﻿@using System.Web.Mvc.Html
+@using MvcApp
+@inherits System.Web.Mvc.WebViewPage<MvcAppExample.Models.TabExampleModel>
+@{
+    Layout = Html.GetTabLayout();
+}
+
+@section menuBar
+{
+    <input type="image" class="menuButton menuButtonSave editorIcon" src="@Html.ResolveUrl("/images/ui/save.gif")" />
+}
+
+<div class="propertyPane">
+    <h2 class="propertyPaneTitel">Tab 1</h2>
+
+    <p>@Html.ValidationSummary()</p>
+
+    <div class="propertyPaneFooter">-</div>
+</div>
+
+<div class="propertyPane leftAligned">
+    <div class="propertyItem">
+        <div class="propertyItemHeader">Check me!</div>
+        <div class="propertyItemContent">
+            @Html.CheckBoxFor(x => x.CheckMe)
+            @Html.ValidationMessageFor(x => x.CheckMe, "*")
+        </div>
+    </div>
+    <div class="propertyPaneFooter">-</div>
+</div>

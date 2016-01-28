@@ -1,0 +1,24 @@
+﻿@using System.Web.Mvc.Html
+@inherits System.Web.Mvc.WebViewPage<MvcAppExample.Models.TabExampleModel>
+@{
+    Layout = null;
+}
+
+<div class="propertyPane">
+    <h2 class="propertyPaneTitel">WebForms Mvc Tab</h2>
+
+    <p>@Html.ValidationSummary()</p>
+
+    <div class="propertyPaneFooter">-</div>
+</div>
+
+<div class="propertyPane leftAligned">
+    <div class="propertyItem">
+        <div class="propertyItemHeader">Check me!</div>
+        <div class="propertyItemContent">
+            @Html.CheckBoxFor(x => x.CheckMe)
+            @Html.ValidationMessageFor(x => x.CheckMe, "*")
+        </div>
+    </div>
+    <div class="propertyPaneFooter">-</div>
+</div>

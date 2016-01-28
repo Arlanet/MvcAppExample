@@ -1,0 +1,8 @@
+.nuget
+.vs
+packages
+bin
+obj
+*.suo
+*.user
+.tfignore
