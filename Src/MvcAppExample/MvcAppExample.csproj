@@ -49,8 +49,9 @@
     <Compile Include="uCommerce\RegisterMvcRouteTask.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MvcApp">
-      <HintPath>..\..\Lib\MvcApp.dll</HintPath>
+    <Reference Include="MvcApp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\uCommerce.MvcApp.1.0.0\lib\MvcApp.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Web" />
@@ -59,21 +60,28 @@
       <HintPath>..\..\Lib\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="UCommerce, Version=6.9.0.15323, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\Lib\UCommerce.dll</HintPath>
+      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="UCommerce.Infrastructure, Version=6.9.0.15323, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\Lib\UCommerce.Infrastructure.dll</HintPath>
+    <Reference Include="UCommerce.Infrastructure, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="UCommerce.Pipelines, Version=6.9.0.15323, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\Lib\UCommerce.Pipelines.dll</HintPath>
+    <Reference Include="UCommerce.Pipelines, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.Pipelines.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="UCommerce.Presentation, Version=6.9.0.15323, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\Lib\UCommerce.Presentation.dll</HintPath>
+    <Reference Include="UCommerce.Presentation, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.Presentation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="UCommerce.Web.Api, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.Web.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

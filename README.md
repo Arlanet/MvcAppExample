@@ -5,6 +5,11 @@ This example shows how that works in most cases.
 
 Please keep in mind our company has no access to Sitecore, so it's not tested on that platform. In theory it should however work just fine given all the dependencies below are there. Pull requests fixing this issue would be welcome!
 
+#NuGet
+You can get MvcApp from NuGet, it depends on uCommerce.Binaries.
+
+    PM> Install-Package uCommerce.MvcApp
+
 #Usage
 In order to use MvcApp, the only real required step would be registering a Mvc Route. 
 
@@ -36,16 +41,12 @@ From then on, you have multiple ways of utilizing Mvc in your App, please browse
 #Notes
 - Be sure to adjust the `deploypath` in the App.config before rebuilding.
 - The post-build event currently only works for Umbraco. 
-- The following libraries are required, we use an internal NuGet server for these. However, most can also be retrieved from an Umbraco + uCommerce installation, simply drop them in the Lib-folder and you should be ready to go:
+- The required uCommerce Binaries (uCommerce.Binaries) and the MvcApp (uCommerce.MvcApp) itself are retrieved from NuGet.
+- The following libraries are required and could be retrieved from NuGet, but we don't really need all the other stuff that comes with it. We got these DLL's straight from an Umbraco and uCommerce installation and include them for convenience:
  - ClientDependency.Core.dll
  - ClientDependency.Core.Mvc.dll
- - MvcApp.dll (Install MvcApp from the uCommerce App Store for this one)
  - System.Web.Mvc.dll
  - System.Web.WebPages.dll
- - UCommerce.dll
- - UCommerce.Infrastructure.dll
- - UCommerce.Pipelines.dll
- - UCommerce.Presentation.dll
 
 #Recommendations
 Even though we provide quite a few ways to build apps and extensions with MvcApp, we recommend to do as much as possible client-side (using something like Angular.js). This prevents unnecessary page refreshes giving a smooth experience to the user, while still leveraging the power of Controllers through Ajax calls. A great starting point for this is the `ExampleController`-method, which is a blank page which has all uCommerce dependencies injected (including Angular.js).
