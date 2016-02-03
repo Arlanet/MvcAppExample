@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvcApp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\uCommerce.MvcApp.1.0.0\lib\MvcApp.dll</HintPath>
+      <HintPath>..\..\packages\uCommerce.MvcApp.1.0.0.1\lib\MvcApp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
