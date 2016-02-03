@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvcApp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\uCommerce.MvcApp.1.0.0.1\lib\MvcApp.dll</HintPath>
+      <HintPath>..\..\packages\uCommerce.MvcApp.1.0.0.3\lib\MvcApp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -59,24 +59,32 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Lib\System.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="UCommerce, Version=6.9.0.15323, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.dll</HintPath>
+    <Reference Include="UCommerce, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\uCommerce.Core.7.0.0.16029\lib\net400\UCommerce.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UCommerce.Admin, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\uCommerce.Core.7.0.0.16029\lib\net400\UCommerce.Admin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="UCommerce.Infrastructure, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.Infrastructure.dll</HintPath>
+      <HintPath>..\..\packages\uCommerce.Core.7.0.0.16029\lib\net400\UCommerce.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="UCommerce.Pipelines, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.Pipelines.dll</HintPath>
+      <HintPath>..\..\packages\uCommerce.Core.7.0.0.16029\lib\net400\UCommerce.Pipelines.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="UCommerce.Presentation, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.Presentation.dll</HintPath>
+      <HintPath>..\..\packages\uCommerce.Core.7.0.0.16029\lib\net400\UCommerce.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UCommerce.Transactions.Payments, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\uCommerce.Core.7.0.0.16029\lib\net400\UCommerce.Transactions.Payments.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="UCommerce.Web.Api, Version=7.0.0.16029, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\uCommerce.Binaries.7.0.0.0\lib\UCommerce.Web.Api.dll</HintPath>
+      <HintPath>..\..\packages\uCommerce.Core.7.0.0.16029\lib\net400\UCommerce.Web.Api.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
